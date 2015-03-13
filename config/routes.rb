@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   resources :users
   resources :account_activations, only: [:edit]
 
+  default_url_options :host => "localhost:3000"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
